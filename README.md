@@ -12,6 +12,40 @@ Web-based threat intel portals are useful but slow for batch triage. `ioc-enrich
 
 ---
 
+## Screenshots
+
+### Default Output
+
+Full verdict table across all three sources — VirusTotal detection ratio, AbuseIPDB abuse score, and Shodan open port count — for a mixed batch of IPs, domains, and hashes.
+
+![Default output](docs/screenshots/default-output.png)
+
+### Verbose Mode
+
+Per-source detail blocks (`-v`) showing VT network metadata, AbuseIPDB ISP/usage/reports, and Shodan open ports with service banners.
+
+![Verbose output](docs/screenshots/verbose-output.png)
+
+### Brief Mode
+
+Minimal three-column triage view (`-b`) — IoC, Verdict, and VT Detection ratio only — for rapid yes/no decisions.
+
+![Brief output](docs/screenshots/brief-output.png)
+
+### Quiet Mode
+
+Quiet mode (`-q`) filtering out CLEAN results, leaving only SUSPICIOUS and MALICIOUS IOCs for focused review.
+
+![Quiet output](docs/screenshots/quiet-output.png)
+
+### Help
+
+Full CLI help text showing all flags and usage examples.
+
+![Help output](docs/screenshots/help-output.png)
+
+---
+
 ## Features
 
 - **Multi-source enrichment** — VirusTotal (all IOC types), AbuseIPDB (IPs), and Shodan (IPs) in a single command
